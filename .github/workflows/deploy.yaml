@@ -50,5 +50,5 @@ jobs:
           
             #Now we have got the access of EC2 and we will start the deploy
             docker pull devinlin11010/github-action-ec2:latest
-            docker run -p 80:80 devinlin11010/github-action-ec2:latest
+            docker run -p 80:80 -d devinlin11010/github-action-ec2:latest
           '
