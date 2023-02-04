@@ -32,8 +32,10 @@ jobs:
           push: true
           tags: devinlin11010/github-action-ec2:latest
   Deploy:
-    runs-on: ubuntu-latest
+    needs: docker
     
+    runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2 
       - name: Deploy in EC2
